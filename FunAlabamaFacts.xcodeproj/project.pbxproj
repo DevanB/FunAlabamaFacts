@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC934B1E1D23085400639E6D /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC934B1D1D23085400639E6D /* ColorModel.swift */; };
 		CCFB7BD01D21863900E7BE16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB7BCF1D21863900E7BE16 /* AppDelegate.swift */; };
 		CCFB7BD21D21863900E7BE16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB7BD11D21863900E7BE16 /* ViewController.swift */; };
 		CCFB7BD51D21863A00E7BE16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFB7BD31D21863A00E7BE16 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC934B1D1D23085400639E6D /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		CCFB7BCC1D21863800E7BE16 /* FunAlabamaFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunAlabamaFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB7BCF1D21863900E7BE16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFB7BD11D21863900E7BE16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				CCFB7BCF1D21863900E7BE16 /* AppDelegate.swift */,
 				CCFB7BD11D21863900E7BE16 /* ViewController.swift */,
+				CC934B1D1D23085400639E6D /* ColorModel.swift */,
 				CCFB7BD31D21863A00E7BE16 /* Main.storyboard */,
 				FBF4ED4E1D221B15000A1C90 /* FactModel.swift */,
 				CCFB7BD61D21863A00E7BE16 /* Assets.xcassets */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					CCFB7BCB1D21863800E7BE16 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = YMQ9WV854R;
 					};
 				};
 			};
@@ -141,6 +145,7 @@
 				FBF4ED4F1D221B15000A1C90 /* FactModel.swift in Sources */,
 				CCFB7BD21D21863900E7BE16 /* ViewController.swift in Sources */,
 				CCFB7BD01D21863900E7BE16 /* AppDelegate.swift in Sources */,
+				CC934B1E1D23085400639E6D /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunAlabamaFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.devanb.FunAlabamaFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunAlabamaFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.devanb.FunAlabamaFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

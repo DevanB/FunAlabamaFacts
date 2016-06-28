@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,33 +15,74 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An interesting Alabama fact goes here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kE-pv-ccd">
-                                <rect key="frame" x="20" y="256" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kE-pv-ccd">
+                                <rect key="frame" x="40" y="225" width="520" height="151"/>
+                                <string key="text">The Alabama state constitution, with over 300,000 words, is the longest state constitution in the world. With over 775 amendments, it is also the most amended state constitution in the world. The Alabama state constitution, with over 300,000 words, is the longest state constitution in the world. With over 775 amendments, it is also the most amended state constitution in the world.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x28-3J-fxs">
-                                <rect key="frame" x="97" y="319" width="180" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x28-3J-fxs">
+                                <rect key="frame" x="40" y="480" width="520" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="v7i-6V-LNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show Another Fun Fact"/>
                                 <connections>
                                     <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="7DJ-xw-lcO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsh-7p-TFy">
+                                <rect key="frame" x="40" y="83" width="118" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7kE-pv-ccd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="1g8-bg-9zc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x28-3J-fxs" secondAttribute="bottom" constant="80" id="53I-0z-AUF"/>
+                            <constraint firstItem="7kE-pv-ccd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AxZ-aJ-Ip0"/>
+                            <constraint firstItem="7kE-pv-ccd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DOK-Q3-McQ"/>
+                            <constraint firstItem="x28-3J-fxs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="LU3-5M-sbP"/>
+                            <constraint firstItem="7kE-pv-ccd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Nxa-uC-wJy"/>
+                            <constraint firstItem="Jsh-7p-TFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="VSs-LE-zXV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7kE-pv-ccd" secondAttribute="trailing" constant="20" id="cFG-xP-A6q"/>
+                            <constraint firstItem="7kE-pv-ccd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="cYk-Oy-e4c"/>
+                            <constraint firstItem="7kE-pv-ccd" firstAttribute="top" secondItem="Jsh-7p-TFy" secondAttribute="bottom" constant="120" id="fve-OC-HBR"/>
+                            <constraint firstItem="7kE-pv-ccd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iBr-t8-spV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7kE-pv-ccd" secondAttribute="trailing" constant="20" id="lJL-Zc-2pZ"/>
+                            <constraint firstItem="Jsh-7p-TFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="nfr-vk-FTF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x28-3J-fxs" secondAttribute="trailing" constant="20" id="p80-Vs-Zlw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7kE-pv-ccd" secondAttribute="trailing" constant="20" id="r9m-Uv-fab"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1g8-bg-9zc"/>
+                                <exclude reference="AxZ-aJ-Ip0"/>
+                                <exclude reference="DOK-Q3-McQ"/>
+                                <exclude reference="cYk-Oy-e4c"/>
+                                <exclude reference="fve-OC-HBR"/>
+                                <exclude reference="lJL-Zc-2pZ"/>
+                                <exclude reference="r9m-Uv-fab"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="funFactButton" destination="x28-3J-fxs" id="fHl-le-tHY"/>
                         <outlet property="funFactLabel" destination="7kE-pv-ccd" id="nYm-UH-IoN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046.5" y="670.5"/>
+            <point key="canvasLocation" x="1046" y="670"/>
         </scene>
     </scenes>
 </document>
