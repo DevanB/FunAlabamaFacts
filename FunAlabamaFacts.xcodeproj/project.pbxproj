@@ -12,6 +12,7 @@
 		CCFB7BD51D21863A00E7BE16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFB7BD31D21863A00E7BE16 /* Main.storyboard */; };
 		CCFB7BD71D21863A00E7BE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFB7BD61D21863A00E7BE16 /* Assets.xcassets */; };
 		CCFB7BDA1D21863A00E7BE16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFB7BD81D21863A00E7BE16 /* LaunchScreen.storyboard */; };
+		FBF4ED4F1D221B15000A1C90 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4ED4E1D221B15000A1C90 /* FactModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CCFB7BD61D21863A00E7BE16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCFB7BD91D21863A00E7BE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCFB7BDB1D21863B00E7BE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF4ED4E1D221B15000A1C90 /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				CCFB7BCF1D21863900E7BE16 /* AppDelegate.swift */,
 				CCFB7BD11D21863900E7BE16 /* ViewController.swift */,
 				CCFB7BD31D21863A00E7BE16 /* Main.storyboard */,
+				FBF4ED4E1D221B15000A1C90 /* FactModel.swift */,
 				CCFB7BD61D21863A00E7BE16 /* Assets.xcassets */,
 				CCFB7BD81D21863A00E7BE16 /* LaunchScreen.storyboard */,
 				CCFB7BDB1D21863B00E7BE16 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF4ED4F1D221B15000A1C90 /* FactModel.swift in Sources */,
 				CCFB7BD21D21863900E7BE16 /* ViewController.swift in Sources */,
 				CCFB7BD01D21863900E7BE16 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +290,7 @@
 				CCFB7BE01D21863B00E7BE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
